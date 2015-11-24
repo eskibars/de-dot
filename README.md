@@ -5,6 +5,7 @@ converting field names with dots to underscores
 # Reason
 In Elasticsearch 2.0 field names with dots are no longer allowed.  Overall, this is a good thing.
 These fields caused lots of problems:
+
 1. [Logstash](https://discuss.elastic.co/t/please-read-upgrading-logstash-and-elasticsearch-to-2-0/33791)
 2. [Kibana](https://github.com/elastic/kibana/issues/3540)
 3. [Core Elasticsearch](https://github.com/elastic/elasticsearch/issues/11337)
@@ -12,6 +13,8 @@ These fields caused lots of problems:
 # Running
 Before you run this, make sure to set up your new index with proper mappings.
 Your old "." fields won't exist anymore.  You'll need to create the _ ones in their stead with the proper mappings.
+
+Have a look at the source to edit source/destination nodes and source/destination indexes
 
 # License
 -------
